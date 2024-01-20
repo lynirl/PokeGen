@@ -3,5 +3,7 @@ Pokemon Generator fetching data using [PokeAPI](https://pokeapi.co/) and the [Po
 Interface built with JavaFX.
 <br>
 Data is cached to comply with the Fair Rules of the API.
-<br><br>
-![Demo gif](https://media.discordapp.net/attachments/724689834559668339/1198266117781721171/b.gif)
+## Demo
+Each name gets its own Pokémon:
+<br>
+![Demo gif](https://media.discordapp.net/attachments/724689834559668339/1198282713925423264/b.gif)
