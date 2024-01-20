@@ -14,6 +14,5 @@
       <Button fx:id="buttonReady" mnemonicParsing="false" onAction="#onButtonClick" text="Donnez moi un Pokémon!" />
       <Label fx:id="pokeName" />
       <ImageView fx:id="pokeSprite" fitHeight="88.0" fitWidth="148.0" pickOnBounds="true" preserveRatio="true" />
-      <Label fx:id="labelBelow" />
    </children>
 </VBox>
