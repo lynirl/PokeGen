@@ -10,7 +10,8 @@ public class catModele {
 
     //générer un pokémon
     public static String pokeGen(){
-        Client.CACHE = false;
+        //fair rules du site
+        Client.CACHE = true;
 
         //on génère un int, intervalle pour tous les pokémon existants
         long pokeId = round(Math.random()*1025);
