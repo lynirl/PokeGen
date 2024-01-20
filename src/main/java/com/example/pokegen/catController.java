@@ -28,7 +28,7 @@ public class catController {
        }else{
            nameField.setStyle("-fx-background-color : white");
            //on set le text au nom du pokémon
-           pokeName.setText(catModele.pokeGen());
+           pokeName.setText(catModele.pokeGen(nameField.getText()));
            //et on récupère son sprite.
            pokeSprite.setImage(new Image(Pokemon.getByName(pokeName.getText().toLowerCase()).getSprites().getFrontDefault()));
            labelBelow.setText("(Si vous n'aimez pas, vous pouvez toujours recommencer...)");

@@ -9,17 +9,22 @@ import static java.lang.Math.round;
 public class catModele {
 
     //générer un pokémon
-    public static String pokeGen(){
+    public static String pokeGen(String nom){
         //fair rules du site
         Client.CACHE = true;
 
-        //on génère un int, intervalle pour tous les pokémon existants
-        long pokeId = round(Math.random()*1025);
+        //on hash le nom et on le divise pour avoir ses 3 derniers chiffres
+        //déso pas déso les Pokémons à partir de 1000
+        //TODO: (faire en sorte qu'il y ait un failsafe pour avoir les pokémons au dessus quand même)
+        int pokeId = Math.abs(nom.hashCode() % 1000);
+
+        //DEBUG: voir si l'id est valide
+        System.out.println(pokeId);
 
         //on récupère le pokémon correspondant à cet int et on le capitalize
-        String pokeResult = catUtilitaire.capitalize(Pokemon.getById((int) pokeId).getName());
+        String pokeResult = catUtilitaire.capitalize(Pokemon.getById(pokeId).getName());
 
-        //debug
+        //DEBUG
         System.out.println(pokeResult);
 
         //résultat
