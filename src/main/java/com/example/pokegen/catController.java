@@ -17,8 +17,6 @@ public class catController {
     @FXML
     private ImageView pokeSprite;
     @FXML
-    private Label labelBelow;
-    @FXML
     private TextField nameField;
 
     @FXML
@@ -31,7 +29,6 @@ public class catController {
            pokeName.setText(catModele.pokeGen(nameField.getText()));
            //et on récupère son sprite.
            pokeSprite.setImage(new Image(Pokemon.getByName(pokeName.getText().toLowerCase()).getSprites().getFrontDefault()));
-           labelBelow.setText("(Si vous n'aimez pas, vous pouvez toujours recommencer...)");
        }
     }
 }
