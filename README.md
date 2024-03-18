@@ -6,4 +6,4 @@ Data is cached to comply with the Fair Rules of the API.
 ## Demo
 Each name gets its own Pokémon:
 <br>
-![Demo gif](https://media.discordapp.net/attachments/724689834559668339/1198282713925423264/b.gif)
+![Demo gif](https://file.garden/ZeMEWj685jeI5jh2/b.gif)
